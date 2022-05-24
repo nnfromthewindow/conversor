@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="548.0" prefWidth="419.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller">
+   <children>
+      <Label fx:id="labelInit" layoutX="21.0" layoutY="43.0" prefHeight="103.0" prefWidth="378.0" text="Conversor de Moneda y Temperatura" textAlignment="CENTER" wrapText="true">
+         <font>
+            <Font name="Candara Bold" size="29.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="comboBox" layoutX="83.0" layoutY="274.0" prefHeight="48.0" prefWidth="274.0" promptText="¿Que desea convertir?" style="-fx-font-size: 20px;" />
+   </children>
+</AnchorPane>
