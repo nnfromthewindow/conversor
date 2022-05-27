@@ -1,17 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="548.0" prefWidth="419.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="548.0" prefWidth="419.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SceneController">
    <children>
-      <Label fx:id="labelInit" layoutX="21.0" layoutY="43.0" prefHeight="103.0" prefWidth="378.0" text="Conversor de Moneda y Temperatura" textAlignment="CENTER" wrapText="true">
+      <Label fx:id="labelInit" layoutX="21.0" layoutY="43.0" prefHeight="103.0" prefWidth="378.0" text="Conversor de Divisas y Temperatura" textAlignment="CENTER" wrapText="true">
          <font>
             <Font name="Candara Bold" size="29.0" />
          </font>
       </Label>
-      <ComboBox fx:id="comboBox" layoutX="83.0" layoutY="274.0" prefHeight="48.0" prefWidth="274.0" promptText="¿Que desea convertir?" style="-fx-font-size: 20px;" />
+      <Button fx:id="monedaBtn" layoutX="85.0" layoutY="303.0" mnemonicParsing="false" onAction="#switchToDivisas" prefHeight="40.0" prefWidth="250.0" text="Conversor de Divisas">
+         <font>
+            <Font size="19.0" />
+         </font></Button>
+      <Button fx:id="tempBtn" layoutX="85.0" layoutY="383.0" mnemonicParsing="false" onAction="#switchToTemp" text="Conversor de Temperatura">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Button>
    </children>
 </AnchorPane>

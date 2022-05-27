@@ -1,71 +1,65 @@
 package application;
 
 import java.io.IOException;
-import java.net.URL;
-import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
-import javafx.fxml.Initializable;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.ComboBox;
+import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.stage.Stage;
 
-public class Controller implements Initializable {
-
+public class SceneController{
+	
 	@FXML
 	private Label labelInit;
-	
 	@FXML
-	private ComboBox<String> comboBox;
+	private Button monedaBtn;
+	@FXML
+	private Button tempBtn;
+	@FXML
+	private Button principalBtn;
 	
-	private String[] conversor = {"Moneda","Temperatura"};
-
-	@Override
-	public void initialize(URL arg0, ResourceBundle arg1) {
-		comboBox.getItems().addAll(conversor);
-		
-//		ActionListener comboBoxActionListener = new ActionListener();
-		
-		}
-//-----------------------------------------------------------
-	//Control de Pantallas
-//-----------------------------------------------------------	
-	 private Stage stage;
-	 private Scene scene;
-	 private Parent root;
+	private Stage stage;
+	private Scene scene;
+	private Parent root;
 	 
-	 public void switchToMoneda(ActionEvent event) throws IOException {
+
+ 	public void switchToDivisas(ActionEvent event) throws IOException {
 	  root = FXMLLoader.load(getClass().getResource("Moneda.fxml"));
 	  stage = (Stage)((Node)event.getSource()).getScene().getWindow();
 	  scene = new Scene(root);
+	  stage.setTitle("Conversor de Divisas");
 	  stage.setScene(scene);
+	  stage.setResizable(false);
 	  stage.show();
-	 }
+	
+	 };
 	 
 	 public void switchToTemp(ActionEvent event) throws IOException {
+		
 	  Parent root = FXMLLoader.load(getClass().getResource("Temperatura.fxml"));
 	  stage = (Stage)((Node)event.getSource()).getScene().getWindow();
 	  scene = new Scene(root);
+	  stage.setTitle("Conversor de Temperatura");
 	  stage.setScene(scene);
+	  stage.setResizable(false);
 	  stage.show();
-	 }
+
+	  };
+	 
 	  public void switchToHome(ActionEvent event) throws IOException {
 		  Parent root = FXMLLoader.load(getClass().getResource("Intro.fxml"));
 		  stage = (Stage)((Node)event.getSource()).getScene().getWindow();
 		  scene = new Scene(root);
+		  stage.setTitle("Conversor de Divisas y Temperatura");
 		  stage.setScene(scene);
+		  stage.setResizable(false);
 		  stage.show();
+
 	 }
-	 
 
 
 }
-
-	
-	
-
-
