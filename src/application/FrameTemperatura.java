@@ -5,6 +5,8 @@ import java.math.BigDecimal;
 import java.math.RoundingMode;
 import java.net.URL;
 import java.util.ResourceBundle;
+
+import javax.swing.ImageIcon;
 import javax.swing.JOptionPane;
 import javafx.beans.value.ChangeListener;
 import javafx.beans.value.ObservableValue;
@@ -49,6 +51,7 @@ public class FrameTemperatura implements Initializable {
 		  Parent root = FXMLLoader.load(getClass().getResource("Intro.fxml"));
 		  stage = (Stage)((Node)event.getSource()).getScene().getWindow();
 		  scene = new Scene(root);
+		  scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
 		  stage.setTitle("Conversor de Divisas y Temperatura");
 		  stage.setScene(scene);
 		  stage.setResizable(false);
@@ -135,7 +138,8 @@ public class FrameTemperatura implements Initializable {
 				}
 				
 			}else {
-				JOptionPane.showMessageDialog(null, "Debe ingresar solo numeros y terminar con un decimal (##.#)", "Intentelo de nuevo :(", JOptionPane.PLAIN_MESSAGE);
+				ImageIcon icono = new ImageIcon("tempico.png");
+				JOptionPane.showMessageDialog(null, "Debe ingresar solo numeros y terminar con un decimal (##.#)", "Intentelo de nuevo :(", JOptionPane.PLAIN_MESSAGE,icono);
 				input.setText("");
 				result.setText("");
 			}

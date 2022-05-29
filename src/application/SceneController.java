@@ -31,6 +31,7 @@ public class SceneController{
 	  root = FXMLLoader.load(getClass().getResource("Moneda.fxml"));
 	  stage = (Stage)((Node)event.getSource()).getScene().getWindow();
 	  scene = new Scene(root);
+	  scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
 	  stage.setTitle("Conversor de Divisas");
 	  stage.setScene(scene);
 	  stage.setResizable(false);
@@ -43,6 +44,7 @@ public class SceneController{
 	  Parent root = FXMLLoader.load(getClass().getResource("Temperatura.fxml"));
 	  stage = (Stage)((Node)event.getSource()).getScene().getWindow();
 	  scene = new Scene(root);
+	  scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
 	  stage.setTitle("Conversor de Temperatura");
 	  stage.setScene(scene);
 	  stage.setResizable(false);
@@ -54,6 +56,7 @@ public class SceneController{
 		  Parent root = FXMLLoader.load(getClass().getResource("Intro.fxml"));
 		  stage = (Stage)((Node)event.getSource()).getScene().getWindow();
 		  scene = new Scene(root);
+		  scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
 		  stage.setTitle("Conversor de Divisas y Temperatura");
 		  stage.setScene(scene);
 		  stage.setResizable(false);

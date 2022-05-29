@@ -1,1 +1,23 @@
 /* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+
+.intro{
+	-fx-background-color: linear-gradient(to right, rgb(0, 128, 192), rgb(0, 72, 106));
+	background-color: linear-gradient(to right, rgb(0, 128, 192), rgb(0, 72, 106));
+}
+
+
+	
+.button{
+-fx-background-color: rgb(2,0,36);
+-fx-background-color: linear-gradient(to right, rgb(128, 128, 128), rgb(163, 152, 224));
+-fx-transition: 200s;
+background-color: rgb(2,0,36);
+background-color: linear-gradient(to right, rgb(128, 128, 128), rgb(192, 192, 192));
+}
+
+.button:hover{
+-fx-background-color: rgb(2,0,36);
+-fx-background-color: linear-gradient(to right, rgb(128, 128, 128), rgb(133, 80, 220));
+-fx-transition: 200s;
+	
+}

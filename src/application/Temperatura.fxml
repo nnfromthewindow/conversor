@@ -7,9 +7,9 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="548.0" prefWidth="419.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.FrameTemperatura">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="548.0" prefWidth="419.0" styleClass="intro" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.FrameTemperatura">
    <children>
-      <Button fx:id="principalBtn" layoutX="96.0" layoutY="460.0" mnemonicParsing="false" onAction="#switchToHome" prefHeight="40.0" prefWidth="227.0" text="Menu Principal">
+      <Button fx:id="principalBtn" styleClass="title" layoutX="96.0" layoutY="460.0" mnemonicParsing="false" onAction="#switchToHome" prefHeight="40.0" prefWidth="227.0" text="Menu Principal">
          <font>
             <Font size="19.0" />
          </font>

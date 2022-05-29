@@ -5,18 +5,18 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="548.0" prefWidth="419.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SceneController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="548.0" prefWidth="419.0" styleClass="intro" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SceneController">
    <children>
-      <Label fx:id="labelInit" layoutX="21.0" layoutY="43.0" prefHeight="103.0" prefWidth="378.0" text="Conversor de Divisas y Temperatura" textAlignment="CENTER" wrapText="true">
+      <Label fx:id="labelInit" layoutX="21.0" layoutY="43.0" prefHeight="103.0" prefWidth="378.0" styleClass="title" text="Conversor de Divisas y Temperatura" textAlignment="CENTER" textFill="#b2b2b2" wrapText="true">
          <font>
             <Font name="Candara Bold" size="29.0" />
          </font>
       </Label>
-      <Button fx:id="monedaBtn" layoutX="85.0" layoutY="303.0" mnemonicParsing="false" onAction="#switchToDivisas" prefHeight="40.0" prefWidth="250.0" text="Conversor de Divisas">
+      <Button fx:id="monedaBtn" layoutX="85.0" layoutY="303.0" mnemonicParsing="false" onAction="#switchToDivisas" prefHeight="40.0" prefWidth="250.0" styleClass="button" text="Conversor de Divisas">
          <font>
             <Font size="19.0" />
          </font></Button>
-      <Button fx:id="tempBtn" layoutX="85.0" layoutY="383.0" mnemonicParsing="false" onAction="#switchToTemp" text="Conversor de Temperatura">
+      <Button fx:id="tempBtn" layoutX="85.0" layoutY="383.0" mnemonicParsing="false" onAction="#switchToTemp" styleClass="button" text="Conversor de Temperatura">
          <font>
             <Font size="19.0" />
          </font>

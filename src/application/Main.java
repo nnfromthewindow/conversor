@@ -5,6 +5,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.stage.Stage;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.image.Image;
 
 
 
@@ -17,6 +18,7 @@ public class Main extends Application {
 			scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
 			primaryStage.setScene(scene);
 			primaryStage.show();
+			primaryStage.getIcons().add(new Image("file:favico.png"));
 			primaryStage.setTitle("Conversor de Divisas y Temperatura");
 			primaryStage.setResizable(false);
 		} catch(Exception e) {
