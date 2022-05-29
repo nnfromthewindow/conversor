@@ -29,6 +29,7 @@ public class SceneController{
 
  	public void switchToDivisas(ActionEvent event) throws IOException {
 	  root = FXMLLoader.load(getClass().getResource("Moneda.fxml"));
+	  root.setId("moneda");
 	  stage = (Stage)((Node)event.getSource()).getScene().getWindow();
 	  scene = new Scene(root);
 	  scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
@@ -42,6 +43,7 @@ public class SceneController{
 	 public void switchToTemp(ActionEvent event) throws IOException {
 		
 	  Parent root = FXMLLoader.load(getClass().getResource("Temperatura.fxml"));
+	  root.setId("temperatura");
 	  stage = (Stage)((Node)event.getSource()).getScene().getWindow();
 	  scene = new Scene(root);
 	  scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
@@ -54,6 +56,7 @@ public class SceneController{
 	 
 	  public void switchToHome(ActionEvent event) throws IOException {
 		  Parent root = FXMLLoader.load(getClass().getResource("Intro.fxml"));
+		  root.setId("intro");
 		  stage = (Stage)((Node)event.getSource()).getScene().getWindow();
 		  scene = new Scene(root);
 		  scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());

@@ -49,6 +49,7 @@ public class FrameTemperatura implements Initializable {
 	//FUNCION PARA VOLVER AL INICIO	
 	 public void switchToHome(ActionEvent event) throws IOException {
 		  Parent root = FXMLLoader.load(getClass().getResource("Intro.fxml"));
+		  root.setId("intro");
 		  stage = (Stage)((Node)event.getSource()).getScene().getWindow();
 		  scene = new Scene(root);
 		  scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());

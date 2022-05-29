@@ -1,10 +1,30 @@
 /* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
 
 .intro{
-	-fx-background-color: linear-gradient(to right, rgb(0, 128, 192), rgb(0, 72, 106));
-	background-color: linear-gradient(to right, rgb(0, 128, 192), rgb(0, 72, 106));
+	  -fx-background-image: url("introback.png");
+    
+   
+    -fx-background-size: auto;
+    -fx-background-position: center center;
+    -fx-effect: dropshadow(three-pass-box, black, 30, 0.5, 0, 0); 
 }
 
+.temperatura{
+	  -fx-background-image: url("tempback.png");
+  
+ 
+    -fx-background-size: auto;
+    -fx-background-position: center center;
+    -fx-effect: dropshadow(three-pass-box, black, 30, 0.5, 0, 0); 
+}
+
+.moneda{
+	  -fx-background-image: url("exchangeback.png");
+  
+    -fx-background-size: auto;
+    -fx-background-position: center center;
+    -fx-effect: dropshadow(three-pass-box, black, 30, 0.5, 0, 0); 
+}
 
 	
 .button{
@@ -21,3 +41,5 @@ background-color: linear-gradient(to right, rgb(128, 128, 128), rgb(192, 192, 19
 -fx-transition: 200s;
 	
 }
+
+

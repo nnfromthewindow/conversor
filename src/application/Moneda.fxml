@@ -4,41 +4,53 @@
 <?import javafx.scene.control.ComboBox?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Glow?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="548.0" prefWidth="419.0" styleClass="intro" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.DivisasController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="548.0" prefWidth="419.0" styleClass="moneda" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.DivisasController">
    <children>
-      <Label layoutX="88.0" styleClass="title" layoutY="57.0" text="Conversor de Divisas">
+      <Label layoutX="49.0" layoutY="59.0" prefHeight="123.0" prefWidth="343.0" styleClass="title" text="Conversor de Divisas " textAlignment="CENTER" textFill="WHITE" wrapText="true">
          <font>
-            <Font name="Candara Bold" size="28.0" />
+            <Font name="Bank Gothic Medium BT" size="49.0" />
          </font>
+         <effect>
+            <Glow level="0.86" />
+         </effect>
       </Label>
-      <Button layoutX="103.0" layoutY="453.0" mnemonicParsing="false" onAction="#switchToHome" prefHeight="40.0" prefWidth="227.0" text="Menu Principal">
+      <Button layoutX="104.0" layoutY="450.0" mnemonicParsing="false" onAction="#switchToHome" prefHeight="40.0" prefWidth="227.0" text="Menu Principal">
          <font>
             <Font size="19.0" />
          </font></Button>
-      <ComboBox fx:id="inputType" layoutX="46.0" layoutY="259.0" prefWidth="150.0" style="-fx-font-size: 15;" />
-      <ComboBox fx:id="resultType" layoutX="244.0" layoutY="259.0" prefWidth="150.0" style="-fx-font-size: 15;" />
-      <Label layoutX="210.0" layoutY="221.0" prefHeight="38.0" prefWidth="20.0" text="=">
+      <ComboBox fx:id="inputType" layoutX="43.0" layoutY="261.0" prefWidth="150.0" style="-fx-font-size: 15;" />
+      <ComboBox fx:id="resultType" layoutX="241.0" layoutY="261.0" prefWidth="150.0" style="-fx-font-size: 15;" />
+      <Label layoutX="207.0" layoutY="223.0" prefHeight="38.0" prefWidth="20.0" text="=">
          <font>
             <Font size="26.0" />
          </font>
       </Label>
-      <TextField fx:id="input" layoutX="47.0" layoutY="209.0" prefHeight="40.0" prefWidth="149.0">
+      <TextField fx:id="input" layoutX="44.0" layoutY="211.0" prefHeight="40.0" prefWidth="149.0">
          <font>
             <Font name="Candara Bold" size="25.0" />
          </font>
       </TextField>
-      <TextField fx:id="result" accessibleRole="TEXT" editable="false" layoutX="245.0" layoutY="209.0" prefHeight="40.0" prefWidth="149.0">
+      <TextField fx:id="result" accessibleRole="TEXT" editable="false" layoutX="242.0" layoutY="211.0" prefHeight="40.0" prefWidth="149.0">
          <font>
             <Font name="Candara Bold" size="25.0" />
          </font>
       </TextField>
-      <Button fx:id="convertBtn" layoutX="154.0" layoutY="332.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="131.0" text="Convertir">
+      <Button fx:id="convertBtn" layoutX="152.0" layoutY="335.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="131.0" text="Convertir">
          <font>
             <Font name="Candara Bold" size="20.0" />
          </font>
       </Button>
+      <Label layoutX="103.0" layoutY="514.0" styleClass="footer" text="desarrolado por Nicolás Nuccelli" textFill="WHITE">
+         <font>
+            <Font name="Bank Gothic Light BT" size="12.0" />
+         </font>
+         <effect>
+            <Glow level="0.82" />
+         </effect>
+      </Label>
    </children>
 </AnchorPane>

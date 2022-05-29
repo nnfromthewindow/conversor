@@ -7,38 +7,43 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="548.0" prefWidth="419.0" styleClass="intro" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.FrameTemperatura">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="548.0" prefWidth="419.0" styleClass="temperatura" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.FrameTemperatura">
    <children>
-      <Button fx:id="principalBtn" styleClass="title" layoutX="96.0" layoutY="460.0" mnemonicParsing="false" onAction="#switchToHome" prefHeight="40.0" prefWidth="227.0" text="Menu Principal">
+      <Button fx:id="principalBtn" layoutX="96.0" layoutY="460.0" mnemonicParsing="false" onAction="#switchToHome" prefHeight="40.0" prefWidth="227.0" styleClass="title" text="Menu Principal">
          <font>
             <Font size="19.0" />
          </font>
       </Button>
-      <Label layoutX="52.0" layoutY="57.0" prefHeight="36.0" prefWidth="315.0" text="Conversor de Temperatura" wrapText="true">
+      <Label layoutX="40.0" layoutY="63.0" prefHeight="113.0" prefWidth="341.0" text="Conversor de Temperatura " textAlignment="CENTER" wrapText="true">
          <font>
-            <Font name="System Bold" size="25.0" />
+            <Font name="Bank Gothic Medium BT" size="41.0" />
          </font>
       </Label>
-      <ComboBox fx:id="inputType" layoutX="36.0" layoutY="249.0" prefWidth="150.0" style="-fx-font-size: 15;" />
+      <ComboBox fx:id="inputType" layoutX="37.0" layoutY="270.0" prefWidth="150.0" style="-fx-font-size: 15;" />
       
-      <ComboBox fx:id="resultType" layoutX="234.0" layoutY="249.0" prefWidth="150.0" style="-fx-font-size: 15;" />
-      <Label layoutX="200.0" layoutY="211.0" prefHeight="38.0" prefWidth="20.0" text="=">
+      <ComboBox fx:id="resultType" layoutX="235.0" layoutY="270.0" prefWidth="150.0" style="-fx-font-size: 15;" />
+      <Label layoutX="201.0" layoutY="232.0" prefHeight="38.0" prefWidth="20.0" text="=">
          <font>
             <Font size="26.0" />
          </font>
       </Label>
-      <TextField fx:id="input" layoutX="37.0" layoutY="199.0" prefHeight="40.0" prefWidth="149.0">
+      <TextField fx:id="input" layoutX="38.0" layoutY="220.0" prefHeight="40.0" prefWidth="149.0">
          <font>
             <Font name="Candara Bold" size="25.0" />
          </font></TextField>
-      <TextField fx:id="result" accessibleRole="TEXT" editable="false" layoutX="235.0" layoutY="199.0" prefHeight="40.0" prefWidth="149.0">
+      <TextField fx:id="result" accessibleRole="TEXT" editable="false" layoutX="236.0" layoutY="220.0" prefHeight="40.0" prefWidth="149.0">
          <font>
             <Font name="Candara Bold" size="25.0" />
          </font></TextField>
-      <Button fx:id="convertBtn" layoutX="144.0" layoutY="322.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="131.0" text="Convertir">
+      <Button fx:id="convertBtn" layoutX="145.0" layoutY="343.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="131.0" text="Convertir">
          <font>
             <Font name="Candara Bold" size="20.0" />
          </font>
       </Button>
+      <Label layoutX="96.0" layoutY="527.0" styleClass="footer" text="desarrolado por Nicolás Nuccelli">
+         <font>
+            <Font name="Bank Gothic Light BT" size="12.0" />
+         </font>
+      </Label>
    </children>
 </AnchorPane>
